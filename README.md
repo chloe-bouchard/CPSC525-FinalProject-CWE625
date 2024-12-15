@@ -7,7 +7,7 @@ addEmail.c:
 
 exploit.sh:
     If newsletterSubscribers.txt does not exist, this script creates the file.
-    This program takes advantage of addEmail.c's vulnerable regex pattern and injects shell code into the input. Because the regex isn't restrictive enough, it will accept any characters before the @ symbol. This script injects shell code into the email input, which will result in newsletterSubscribers.txt being deleted.
+    Because the vulnerable code's regex isn't restrictive enough, it will accept any characters before the @ symbol. This script injects shell code into the email input, which will result in newsletterSubscribers.txt being deleted.
 
 
 To run in a non-malicious way:
